@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOT ❤️ PDF - Multi Tool HUB</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>DOT ❤️ PDF</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#tools">Tools</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Tool Categories</h3>
+            <button class="sidebar-close" id="sidebarClose">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <div class="tool-category">
+                <h4>🖼️ Image Tools</h4>
+                <ul>
+                    <li><a href="tools/image-converter.html">Image Converter</a></li>
+                    <li><a href="tools/image-compressor.html">Image Compressor</a></li>
+                    <li><a href="tools/image-resizer.html">Image Resizer</a></li>
+                    <li><a href="tools/image-cropper.html">Image Cropper</a></li>
+                </ul>
+            </div>
+            <div class="tool-category">
+                <h4>📄 PDF Tools</h4>
+                <ul>
+                    <li><a href="tools/merge-pdf.html">Merge PDF</a></li>
+                    <li><a href="tools/split-pdf.html">Split PDF</a></li>
+                    <li><a href="tools/compress-pdf.html">Compress PDF</a></li>
+                    <li><a href="tools/jpg-to-pdf.html">JPG to PDF</a></li>
+                </ul>
+            </div>
+            <div class="tool-category">
+                <h4>🧮 Calculator Tools</h4>
+                <ul>
+                    <li><a href="tools/scientific-calculator.html">Scientific Calculator</a></li>
+                    <li><a href="tools/age-calculator.html">Age Calculator</a></li>
+                    <li><a href="tools/bmi-calculator.html">BMI Calculator</a></li>
+                </ul>
+            </div>
+            <div class="tool-category">
+                <h4>📝 Text Tools</h4>
+                <ul>
+                    <li><a href="tools/text-converter.html">Text Case Converter</a></li>
+                    <li><a href="tools/word-counter.html">Word Counter</a></li>
+                    <li><a href="tools/text-encryptor.html">Text Encryptor</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Every tool you need, in one futuristic place</h1>
+                <p class="hero-description">
+                    Experience the future of digital tools. All are 100% FREE and easy to use! 
+                    Convert, merge, compress, calculate, and transform your files with cutting-edge technology.
+                </p>
+                <button class="cta-button" id="exploreTools">
+                    <span>Explore Tools</span>
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Tools Grid -->
+        <section class="tools-section" id="tools">
+            <div class="tools-container">
+                <h2 class="section-title">Featured Tools</h2>
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- Tools will be dynamically loaded here -->
+                </div>
+                <button class="load-more-btn" id="loadMoreBtn">Load More Tools</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2025 DOT ❤️ PDF. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2"/>
+        </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
